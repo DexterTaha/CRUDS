@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CRUDS.css">
+    <script src="CRUDS.js" defer></script>
+    <title>CRUDS</title>
+</head>
+<body>
+    <div class="cruds">
+        <div class="head">
+            <h2>CRUDS</h2>
+            <p>Product Management</p>
+        </div>
+        <div class="inputs">
+            <input placeholder="Title" type="text" id="title">
+            <div class="price">
+                <input onkeyup="getTotal()" placeholder="Price" type="number" id="price">
+                <input onkeyup="getTotal()" placeholder="Taxes" type="number" id="taxes">
+                <input onkeyup="getTotal()" placeholder="Ads" type="number" id="ads">
+                <input onkeyup="getTotal()" placeholder="Discount" type="number" id="discount">
+                <small id="total">Total: 0</small>
+            </div>
+            <input placeholder="Count" type="number" id="count">
+            <input placeholder="Category" type="text" id="category">
+            <button id="submit">Create</button>
+        </div>
+        <div class="outputs">
+            <div class="searchBlock">
+                <input type="text" placeholder="Search" id="search">
+                <div class="btnSearch">
+                    <button id="searchTitle">Search By Title</button>
+                    <button id="searchCategory">Search By Category</button>
+                </div>
+            </div>
+            <div id="deleteAll"></div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Taxes</th>
+                        <th>Ads</th>
+                        <th>Discount</th>
+                        <th>Total</th>
+                        <th>Category</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="copyright-content">
+                        <p>© Copyright 2024  |  All Rights Reserved by <a href="https://dextertaha.github.io/Taha-Taidi-Laamiri-portfolio/" target="_blank">Taha TAIDI LAAMIRI</a> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

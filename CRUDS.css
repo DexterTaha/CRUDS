@@ -1,0 +1,130 @@
+/* Existing Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: system-ui;
+}
+.cruds {
+    width: 80%;
+    margin: auto;
+}
+.head {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+input {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: #111;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 4px;
+    color: #fff;
+}
+input:focus {
+    background: #000;
+    transform: scale(1.1);
+}
+.price input {
+    width: 20%;
+}
+#total {
+    background: #a00d02;
+    padding: 5px 2px;
+    border-radius: 4px;
+}
+button {
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background: #310044;
+    color: #fff;
+    border-radius: 20px;
+    transition: 0.7s;
+}
+button:hover {
+    background: #8e18bd;
+    letter-spacing: 1px;
+}
+.btnSearch {
+    display: flex;
+    justify-content: space-between;
+}
+.btnSearch button {
+    width: 45%;
+}
+#deleteAll {
+    margin: 20px 0;
+}
+table button:hover {
+    transform: scale(1.1);
+}
+table {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+table th, table td {
+    padding: 5px;
+    border: 1px solid #444;
+}
+thead {
+    background-color: #333;
+}
+
+.copyright {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
+
+.copyright a {
+    color: #8e18bd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.copyright a:hover {
+    color: #c23bf3;
+}
+
+@media (max-width: 768px) {
+    .price input {
+        width: 45%;
+    }
+
+    .btnSearch {
+        flex-direction: column;
+    }
+
+    .btnSearch button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    table th, table td {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .price input {
+        width: 100%;
+    }
+
+    table th, table td {
+        font-size: 10px;
+    }
+}
